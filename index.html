@@ -174,6 +174,10 @@
             </section>
             <section class="c-section">
                 <h3 class="c-section__heading">Logo</h3>
+                <p class="c-section__text">
+                    Please don’t alter or distort the “Dataflix” logo except to change its sizing while preserving the original proportions.
+                    The Logo 
+                </p>
                 <div class="c-logobox">
                     <div class="c-logo--bgred">
                         Dataflix
@@ -182,16 +186,13 @@
                         Dataflix
                     </div>
                 </div>
-                <p class="c-section__text">
-                    Please don’t alter or distort the “Dataflix” logo except to change its sizing while preserving the original proportions.
-                    The Logo 
-                    <!-- Bissi info und vlt was man damit machen darf/nicht machen darf -->
-                </p>
             </section>
             <section class="c-section">
                 <h3 class="c-section__heading">Data Visualization</h3>
                 <p class="c-section__text">
-                    <!-- info zu api maybe -->
+                    As the name indicates, Dataflix is all about visualizing data. Therefore, charts 
+                    are essential.
+                    Below are some guidelines for styling various graphs to keep data visualizations uniformly and clear.
                 </p>
                 <h4 class="c-section__subheading">Pie Chart</h4>
                 <img class="c-section__image">
@@ -208,8 +209,41 @@
             <section class="c-section">
                 <h3 class="c-section__heading">Class Naming Convention – BEM</h3>
                 <p class="c-section__text">
+                    The BEM (Block, Element, Modifier) methodology is a popular naming convention for
+                    CSS and HTML classes. It consists of a block, which is a top-level abstraction of a componenet, 
+                    one or more elements, which can be refered to as child item from the block, and modifiers. Modifiers can 
+                    be used to manipulate blocks or elements or to style a specific item differently than the others. <br>
+                    The synstax is as follows: <br>
+                    <code class="c-section__code">
+                        <span>.block{};</span>
+                        .block--modifier{}; <br>
+                        .block__element{}; <br>
+                        .block__element--modifier{}; <br>
+                    </code>
                     <!-- info zu BEM, beispiele, https://www.smashingmagazine.com/2016/06/battling-bem-extended-edition-common-problems-and-how-to-avoid-them/ -->
+                    In addition there are two custom prefixes used: <br>
+                    A component-block is prefixed with "c-" and indicates a standalone component. <br>
+                    A "-l" marks a layout module. These modules are purely used for positioning c-components and 
+                    structuring the application's layout.
                 </p>
+                <h5 class="c-section__example">Example</h5>
+                <code class="c-section__code">
+                    <article class="l-container">
+                        <section class="c-section">
+                            <h3 class="c-section__heading">CSS Methodology</h3>
+                            <p class="c-section__text">Some information about BEM</p>
+                            <ul class="c-section__list">
+                                A purposless list 
+                                <li class="c-section__listitem">Listitem No. 1</li>
+                                <li class="c-section__listitem">Listitem No. 2</li>
+                                <li class="c-section__listitem--special">A Apecial Listitem</li>
+                            </ul>
+                        </section>
+                        <section class="c-section--red">
+                            <p class="c-section__text">A paragraph within a section with something red.</p>
+                        </section>
+                    </article>
+                </code>
             </section>
             <section class="c-section">
                 <h3 class="c-section__heading">Variables</h3>
