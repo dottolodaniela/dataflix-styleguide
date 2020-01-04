@@ -1,214 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dataflix Styleguide</title>
 </head>
+
 <body>
-    <header>
-        <ul>
-            Foundations
-            <li>Introduction</li>
-            <li>Colors</li>
-            <li>Typography</li>
-            <li>Logo</li>
-            <li>Data Visualization</li>
-        </ul>
+    <header class="l-header">
+        <nav class="c-nav">
+            <ul class="c-nav__list">
+                Foundations
+                <li class="c-nav__listitem">Colors</li>
+                <li class="c-nav__listitem">Typography</li>
+                <li class="c-nav__listitem">Logo</li>
+                <li class="c-nav__listitem">Data Visualization</li>
+            </ul>
 
-        <ul>
-            CSS Methodology
-            <li>Class Naming Convention</li>
-            <li>Variables</li>
-            <li>File Structure</li>
-            <li>Pre-Processors</li>
-        </ul>
+            <ul class="c-nav__list">
+                CSS Methodology
+                <li class="c-nav__listitem">Class Naming Convention</li>
+                <li class="c-nav__listitem">Variables</li>
+                <li class="c-nav__listitem">File Structure</li>
+                <li class="c-nav__listitem">Pre-Processors</li>
+            </ul>
 
-        <ul>
-            Components
-            <li>Headings</li>
-            <li>Paragraphs</li>
-            <li>Links</li>
-            <li>Lists</li>
-            <li>Buttons</li>
-            <li>Form Elements</li>
-            <li>Navigation</li>
-            <li>Icons</li>
-        </ul>
-
+            <ul class="c-nav__list">
+                Components
+                <li class="c-nav__listitem">Headings</li>
+                <li class="c-nav__listitem">Paragraphs</li>
+                <li class="c-nav__listitem">Links</li>
+                <li class="c-nav__listitem">Lists</li>
+                <li class="c-nav__listitem">Buttons</li>
+                <li class="c-nav__listitem">Form Elements</li>
+                <li class="c-nav__listitem">Navigation</li>
+                <li class="c-nav__listitem">Icons</li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
 
-    </nav>
 
-    <main>
-        <article>
-            <h2>Foundations</h2>
-            <section>
-                <h3>Introduction</h3>
-                <p>
 
-                </p>
-            </section>
-            <section>
-                <h3>Colors</h3>
-                <div>
-                    <!-- name: color, table: hex rgb cmyk -->
+
+    <main class="l-main">
+        <article class="c-introduction">
+            <h1 class="c-introduction__heading">Dataflix Styleguide</h1>
+            <p class="c-introduction__text">
+                This styleguide is a resource for developers, designers and content writers to provide
+                brand consistency across the web. It should help to write consistent and high quality
+                code by using a common language around Dataflix's UI patterns.
+            </p>
+        </article>
+        <article class="l-container">
+            <h2 class="l-container__heading">Foundations</h2>
+            <section class="c-section">
+                <h3 class="c-section__heading">Colors</h3>
+                <div class="c-colorbox">
+                    <div class="c-colorbox-red">
+                        <table class="c-colorbox__colorcode">
+                            <tr class="c-colorbox__tablerow">
+                                <td class="c-colorbox__tabledata">HEX</td>
+                                <td class="c-colorbox__tabledata">#E30914</td>
+                            </tr>
+                            <tr class="c-colorbox__tablerow">
+                                <td class="c-colorbox__tabledata">RGB</td>
+                                <td class="c-colorbox__tabledata">rgb(227,9,20)</td>
+                            </tr>
+                            <tr class="c-colorbox__tablerow">
+                                <td class="c-colorbox__tabledata">CMYK</td>
+                                <td class="c-colorbox__tabledata">cmyk(0%,96%,91%,11%)</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="c-section__colorbox-green">
+                        <table class="c-colorbox__colorcode">
+                            <tr class="c-colorbox__tablerow">
+                                <td class="c-colorbox__tabledata">HEX</td>
+                                <td class="c-colorbox__tabledata">#E30914</td>
+                            </tr>
+                            <tr class="c-colorbox__tablerow">
+                                <td class="c-colorbox__tabledata">RGB</td>
+                                <td class="c-colorbox__tabledata">rgb(227,9,20)</td>
+                            </tr>
+                            <tr class="c-colorbox__tablerow">
+                                <td class="c-colorbox__tabledata">CMYK</td>
+                                <td class="c-colorbox__tabledata">cmyk(0%,96%,91%,11%)</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="c-section__colorbox-black">
+                        <table class="c-colorbox__colorcode">
+                            <tr class="c-colorbox__tablerow">
+                                <td class="c-colorbox__tabledata">HEX</td>
+                                <td class="c-colorbox__tabledata">#E30914</td>
+                            </tr>
+                            <tr class="c-colorbox__tablerow">
+                                <td class="c-colorbox__tabledata">RGB</td>
+                                <td class="c-colorbox__tabledata">rgb(227,9,20)</td>
+                            </tr>
+                            <tr class="c-colorbox__tablerow">
+                                <td class="c-colorbox__tabledata">CMYK</td>
+                                <td class="c-colorbox__tabledata">cmyk(0%,96%,91%,11%)</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="c-section__colorbox-white">
+                        <table class="c-colorbox__colorcode">
+                            <tr class="c-colorbox__tablerow">
+                                <td class="c-colorbox__tabledata">HEX</td>
+                                <td class="c-colorbox__tabledata">#E30914</td>
+                            </tr>
+                            <tr class="c-colorbox__tablerow">
+                                <td class="c-colorbox__tabledata">RGB</td>
+                                <td class="c-colorbox__tabledata">rgb(227,9,20)</td>
+                            </tr>
+                            <tr class="c-colorbox__tablerow">
+                                <td class="c-colorbox__tabledata">CMYK</td>
+                                <td class="c-colorbox__tabledata">cmyk(0%,96%,91%,11%)</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </section>
-            <section>
-                <h3>Typography</h3>
-                <h4>Fonts</h4>
-                <p>
-
+            <section class="c-section">
+                <h3 class="c-section__heading">Typography</h3>
+                <h4 class="c-section__subheading">Fonts</h4>
+                <p class="c-section__text">
+                    
                 </p>
-                <h4>Type Scale</h4>
+                <h4 class="c-section__subheading">Type Scale</h4>
+                <table>
+                    <tr>
+                        <td>Heading One</td>
+                        <td>px</td>
+                        <td>Font</td>
+                    </tr>
+                </table>
                 <!-- table: heading nr, size, font + font weight -->
                 <!-- heading 1, heading 2, heading 3, body, button, achsenbeschriftung -->
             </section>
-            <section>
-                <h3>Logo</h3>
+            <section class="c-section">
+                <h3 class="c-section__heading">Logo</h3>
                 <!-- Logo -->
-                <p>
+                <p class="c-section__text">
+                    Please don’t alter or distort the “Dataflix” logo except to change its sizing while preserving the original proportions.
+                    The Logo 
                     <!-- Bissi info und vlt was man damit machen darf/nicht machen darf -->
                 </p>
             </section>
-            <section>
-                <h3>Data Visualization</h3>
-                <p>
+            <section class="c-section">
+                <h3 class="c-section__heading">Data Visualization</h3>
+                <p class="c-section__text">
                     <!-- info zu api maybe -->
                 </p>
-                <h4>Pie Chart</h4>
-                <img>
-                <p> Notes </p>
+                <h4 class="c-section__subheading">Pie Chart</h4>
+                <img class="c-section__image">
+                <p class="c-section__text"> Notes </p>
 
-                <h4>Bar Chart</h4>
-                <img>
-                <p> Notes </p>
+                <h4 class="c-section__subheading">Bar Chart</h4>
+                <img class="c-section__image">
+                <p class="c-section__text"> Notes </p>
             </section>
         </article>
 
-        <article>
-            <h2>CSS Methodology</h2>
-            <section>
-                <h3>Class Naming Convention – BEM</h3>
-                <p>
-                    <!-- info zu BEM, beispiele -->
+        <article class="l-container">
+            <h2 class="l-container__heading">CSS Methodology</h2>
+            <section class="c-section">
+                <h3 class="c-section__heading">Class Naming Convention – BEM</h3>
+                <p class="c-section__text">
+                    <!-- info zu BEM, beispiele, https://www.smashingmagazine.com/2016/06/battling-bem-extended-edition-common-problems-and-how-to-avoid-them/ -->
                 </p>
             </section>
-            <section>
-                <h3>Variables</h3>
-                <p>
+            <section class="c-section">
+                <h3 class="c-section__heading">Variables</h3>
+                <p class="c-section__text">
                     <!-- infos zu css variablen (naming convention, wofür variablen verwendet werden) -->
                 </p>
             </section>
-            <section>
-                <h3>File Structure</h3>
-                <p>
+            <section class="c-section">
+                <h3 class="c-section__heading">File Structure</h3>
+                <p class="c-section__text">
                     <!-- info zu filestructure -->
                 </p>
                 <img> <!-- screenshot von ordnerstructur oder so -->
             </section>
-            <section>
-                <h3>Pre-Processors</h3>
-                <p>
+            <section class="c-section">
+                <h3 class="c-section__heading">Pre-Processors</h3>
+                <p class="c-section__text">
                     <!-- infos zu pre-processors -->
                 </p>
             </section>
         </article>
 
-        <article>
-            <h2>Components</h2>
-            <section>
-                <h3>Headings</h3>
-                <p>
+        <article class="l-container">
+            <h2 class="l-container__heading">Components</h2>
+            <section class="c-section">
+                <h3 class="c-section__heading">Headings</h3>
+                <p class="c-section__text">
                     <!-- heading 1, 2, 3 (ist dann zwar doppelt aber egal) -->
                 </p>
             </section>
-            <section>
-                <h3>Paragraphs</h3>
-                <p>
+            <section class="c-section">
+                <h3 class="c-section__heading">Paragraphs</h3>
+                <p class="c-section__text">
                     <!-- paragraph info -->
                 </p>
-                <h5>Example</h5>
-                <p>
+                <h5 class="c-section__example">Example</h5>
+                <p class="c-section__text">
                     <!-- paragraph with headings -->
                 </p>
             </section>
-            <section>
-                <h3>Links</h3>
-                <p>
+            <section class="c-section">
+                <h3 class="c-section__heading">Links</h3>
+                <p class="c-section__text">
                     <!-- infos zu links -->
                 </p>
-                <h5>Example</h5>
-                <p>
+                <h5 class="c-section__example">Example</h5>
+                <p class="c-section__text">
                     <!-- this is a link -->
                 </p>
             </section>
-            <section>
-                <h3>Lists</h3>
-                <p>
+            <section class="c-section">
+                <h3 class="c-section__heading">Lists</h3>
+                <p class="c-section__text">
                     <!-- infos zu lists -->
                 </p>
-                <h5>Examples</h5>
-                <ul>
-                    <li></li>
+                <h5 class="c-section__example">Examples</h5>
+                <ul class="c-section__list">
+                    <li class="c-section__listitem"></li>
                 </ul>
                 <!-- code snippet -->
-                <p> Notes </p>
+                <p class="c-section__text"> Notes </p>
 
-                <ol>
-                    <li></li>
+                <ol class="c-section__list">
+                    <li class="c-section__listitem"></li>
                 </ol>
                 <!-- code snippet -->
-                <p> Notes </p>
+                <p class="c-section__text"> Notes </p>
             </section>
-            <section>
-                <h3>Buttons</h3>
-                <h4>Basic Buttons</h4>
-                <h5>Example</h5>
+            <section class="c-section">
+                <h3 class="c-section__heading">Buttons</h3>
+                <h4 class="c-section__subheading">Basic Buttons</h4>
+                <h5 class="c-section__example">Example</h5>
                 <!-- buttons example mit hover usw. -->
                 <!-- code snippet -->
-                <p> Notes </p>
+                <p class="c-section__text"> Notes </p>
 
-                <h4>Additional Buttons</h4> <!-- scroll, info, etc. -->
-                <h5>Example</h5>
+                <h4 class="c-section__subheading">Additional Buttons</h4> <!-- scroll, info, etc. -->
+                <h5 class="c-section__example">Example</h5>
                 <!-- buttons example mit hover usw. -->
                 <!-- code snippet -->
-                <p> Notes </p>
+                <p class="c-section__text"> Notes </p>
             </section>
-            <section>
-                <h3>Form Elements</h3>
-                <h4>Drop Down Selection</h4>
-                <h5>Example</h5>
+            <section class="c-section">
+                <h3 class="c-section__heading">Form Elements</h3>
+                <h4 class="c-section__subheading">Drop Down Selection</h4>
+                <h5 class="c-section__example">Example</h5>
                 <!-- example drop down -->
                 <!-- code snippet -->
-                <p> Notes </p>
+                <p class="c-section__text"> Notes </p>
 
-                <h4>Search Input</h4>
-                <h5>Example</h5>
+                <h4 class="c-section__subheading">Search Input</h4>
+                <h5 class="c-section__example">Example</h5>
                 <!-- example drop down -->
                 <!-- code snippet -->
-                <p> Notes </p>
+                <p class="c-section__text"> Notes </p>
             </section>
-            <section>
-                <h3>Navigation</h3>
-                <h5>Example</h5>
+            <section class="c-section">
+                <h3 class="c-section__heading">Navigation</h3>
+                <h5 class="c-section__example">Example</h5>
                 <!-- example navigation -->
                 <!-- code snippet -->
-                <p> Notes </p>
+                <p class="c-section__text"> Notes </p>
             </section>
-            <section>
-                <h3>Icons</h3>
+            <section class="c-section">
+                <h3 class="c-section__heading">Icons</h3>
                 <!-- icon (icon and name) -->
                 <!-- purpose -->
             </section>
         </article>
 
+        <!-- PAGE LAYOUTS !!!!!!!!!!!!! -->
+
     </main>
 
-    
+
 </body>
+
 </html>
