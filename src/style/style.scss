@@ -1,18 +1,10 @@
+@import './variables';
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
-$color-red: #E30914;
-$color-blaulila: rgb(121, 93, 226);
-$color-white: #F6F7F2;
-$color-darkgrey: #2C2C2C;
-
-$font-family: 'Helvetica Neue', Arial, sans-serif;
-
-$fs-heading1: 2.5rem;
-$fs-body: 1rem;
 
 
 .l-body {
@@ -165,9 +157,10 @@ $fs-body: 1rem;
     }
 }
 
+/* TYPESCALE */
 .c-typescale {
     border-collapse: collapse; 
-    width: 60vw;
+    width: 55vw;
     margin-left: 2rem;
 
     &__tablerow {
@@ -187,7 +180,7 @@ $fs-body: 1rem;
         }
 
         &:nth-of-type(2), &:nth-of-type(3) {
-            padding: 1rem;
+            padding-left: 1rem;
         }
     }
 }
