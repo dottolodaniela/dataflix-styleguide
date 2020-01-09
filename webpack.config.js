@@ -1,5 +1,5 @@
 const path = require('path');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -20,6 +20,16 @@ module.exports = {
           'sass-loader',
         ],
       },
+      {
+        test: /\.(png|jp(e*)g|svg)$/,  
+        use: [{
+            loader: 'url-loader',
+            options: { 
+                limit: 10000, // Convert images < 8kb to base64 strings
+                name: 'images/[name].[ext]'
+            } 
+        }]
+      }
     ],
   },
   plugins: [
