@@ -107,3 +107,36 @@
     margin-left: 2rem;
   }
 
+  
+  .c-section__listwrapper {
+    border: solid 7px #2C2C2C;
+    padding: 1.6rem 1.2rem;
+    width: 19rem;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 2rem;
+  }
+  
+  .c-section__listheading {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .c-section__list {
+    margin-left: 1.2rem;
+    padding-top: 1.2rem;
+  }
+  
+  .c-section__listitem {
+    font-size: 1rem;
+    margin: 1.2rem;
+    padding-left: 0.8rem;
+  }
+  
+  .dark {
+    background-color: $color-darkgrey;
+    color: $color-white;
+    border-color: $color-blaulila;
+  }
+

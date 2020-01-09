@@ -54,7 +54,6 @@
 
             <ul class="c-nav__list">
                 <h4 class="c-nav__heading">Components</h4>
-                <li class="c-nav__listitem"><a class="c-nav__link" href="#component-header">Headings</a></li> <!-- lena -->
                 <li class="c-nav__listitem"><a class="c-nav__link" href="#component-paragraph">Paragraphs</a></li> <!-- lena -->
                 <li class="c-nav__listitem"><a class="c-nav__link" href="#component-link">Links</a></li> <!-- lena -->
                 <li class="c-nav__listitem"><a class="c-nav__link" href="#component-list">Lists</a></li> <!-- lena -->
@@ -339,12 +338,6 @@
 
         <article class="l-container">
             <h2 class="l-container__heading">Components</h2>
-            <section class="c-section" id="component-header">
-                <h3 class="c-section__heading">Headings</h3>
-                <p class="c-section__text">
-                    <!-- heading 1, 2, 3 (ist dann zwar doppelt aber egal) -->
-                </p>
-            </section>
             <section class="c-section" id="component-paragraph">
                 <h3 class="c-section__heading">Paragraphs</h3>
                 <p class="c-section__text">
@@ -380,20 +373,30 @@
                     <!-- infos zu lists -->
                 </p>
                 <h5 class="c-section__example">Examples</h5>
-                <ul class="c-section__list">
-                    <li class="c-section__listitem"></li>
-                    <li class="c-section__listitem"></li>
-                    <li class="c-section__listitem"></li>
-                </ul>
-                <!-- code snippet -->
-                <p class="c-section__text"> Notes </p>
-
-                <ol class="c-section__list">
-                    <li class="c-section__listitem"></li>
-                    <li class="c-section__listitem"></li>
-                    <li class="c-section__listitem"></li>
-                </ol>
-                <!-- code snippet -->
+                <div class="c-example__list">
+                    <div class="c-section__listwrapper">
+                        <h4 class="c-section__listheading">Movies you might enjoy</h4>
+                        <ul class="c-section__list">
+                        <li class="c-section__listitem">Gone Girl</li>
+                        <li class="c-section__listitem">Hidden Figures</li>
+                        <li class="c-section__listitem">The Irishman</li>
+                        </ul>
+                    </div>
+                    <div class="c-section__listwrapper dark">
+                        <h4 class="c-section__listheading">Recently wached tv shows</h4>
+                        <ol class="c-section__list">
+                        <li class="c-section__listitem">Orange Is the New Black</li>
+                        <li class="c-section__listitem">Modern Family</li>
+                        <li class="c-section__listitem">House of Cards</li>
+                        </ol>
+                    </div>
+                </div>
+                <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html" data-user="llenaa" data-slug-hash="povpjer" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Lists">
+                    <span>See the Pen <a href="https://codepen.io/llenaa/pen/povpjer">
+                    Lists</a> by llenaa (<a href="https://codepen.io/llenaa">@llenaa</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
                 <p class="c-section__text"> Notes </p>
             </section>
             <section class="c-section" id="component-button">
@@ -565,6 +568,12 @@
         <!-- PAGE LAYOUTS !!!!!!!!!!!!! -->
 
     </main>
+
+    <footer class="c-footer">
+        <p class="c-footer__text">
+            © Daniela Dottolo and Lena Heiglauer
+        </p>
+    </footer>
 
 
 </body>
