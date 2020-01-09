@@ -99,7 +99,7 @@ main {
     margin-bottom: 6rem;
 
     &__heading {
-        margin-bottom: 1.5rem;
+        padding: 1.5rem 0;
     }
 
     &__subheading {
@@ -244,6 +244,30 @@ main {
             padding-left: 1rem;
         }
     }
+}
+
+.c-logobox {
+    height: 7rem;
+}
+
+.c-logo {
+    background-image: url(../images/logo.svg);
+    background-size: 15rem;
+    background-position: center;
+    width: 16rem;
+    height: 7em;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.bgred {
+    background-color: $color-red;
+    color: red;
+    margin-right: 1rem;
+}
+
+.bgdark {
+    background-color: $color-darkgrey;
 }
 
 
