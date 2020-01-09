@@ -5,10 +5,11 @@
 }
 
 $color-red: #E30914;
+$color-blaulila: rgb(121, 93, 226);
 $color-white: #F6F7F2;
 $color-darkgrey: #2C2C2C;
 
-$font-family: Arial;
+$font-family: 'Helvetica Neue', Arial, sans-serif;
 
 $fs-heading1: 2.5rem;
 $fs-body: 1rem;
@@ -26,7 +27,7 @@ $fs-body: 1rem;
 }
 
 .c-header {
-    background-color: $color-red;
+    background-color: $color-blaulila;
     grid-area: head;
     position: sticky;
     top: 0;
@@ -78,4 +79,84 @@ $fs-body: 1rem;
     }
 }
 
+.l-container {
+    margin: 3rem 0;
+}
+.c-section {
+    margin: 2rem 0;
 
+    &__heading {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.c-colorbox {
+
+    width: 50vw;
+
+    &__colorname {
+        font-weight: bold;
+        position: absolute;
+        left: 1rem;
+        top: 1rem;
+    }
+
+    &__color {
+        padding: 2rem 1rem;
+        margin: 1rem 0;
+        position: relative;
+        height: 10rem;
+        border: 1px solid;
+        border-radius: 5px;
+    }
+
+    .red {
+        background-color: $color-red;
+        color: $color-white;
+    }
+    .blaulila {
+        background-color: $color-blaulila;
+        color: $color-white;
+    }
+    .black {
+        background-color: $color-darkgrey;
+        color: $color-white;
+    }
+    .white {
+        background-color: $color-white;   
+        border-color: $color-white;
+        .c-colorbox__tabledata, .c-colorbox__tablerow {
+            border-color: $color-darkgrey;
+        }     
+    }
+
+    &__colorcode {
+        border-collapse: collapse; 
+        position: absolute;
+        right: 2rem;
+        top: 2.2rem;
+    }
+
+    &__tablerow {
+        border-bottom: 1px solid rgba(238, 238, 238, 0.5);
+
+        &:last-of-type {
+            border-bottom: none;
+        }
+    }
+
+    &__tabledata {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    
+        &:first-child {
+            border-right: 1px solid rgba(238, 238, 238, 0.5);
+            text-align: right;
+        }
+
+    }
+}
+
+.c-typescale {
+    border-collapse: collapse; 
+}
