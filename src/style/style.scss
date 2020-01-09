@@ -41,6 +41,7 @@ $fs-body: 1rem;
     }
 }
 
+/* NAVIGATION */
 .c-nav {
     grid-area: nav;
     margin-right: 2rem;
@@ -83,13 +84,19 @@ $fs-body: 1rem;
     margin: 3rem 0;
 }
 .c-section {
-    margin: 2rem 0;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
 
     &__heading {
         margin-bottom: 1.5rem;
     }
+
+    &__subheading {
+        margin: 1rem 0;
+    }
 }
 
+/* COLORS */
 .c-colorbox {
 
     width: 50vw;
@@ -159,4 +166,27 @@ $fs-body: 1rem;
 
 .c-typescale {
     border-collapse: collapse; 
+    width: 60vw;
+    margin-left: 2rem;
+
+    &__tablerow {
+        border-bottom: 1px solid rgba(170, 170, 170, 0.5);
+
+        &:last-of-type {
+            border-bottom: none;
+        }
+    }
+
+    &__tabledata {
+        padding: 1rem 0;
+        border-right: 1px solid rgba(170, 170, 170, 0.5);
+
+        &:last-of-type {
+            border-right: none;
+        }
+
+        &:nth-of-type(2), &:nth-of-type(3) {
+            padding: 1rem;
+        }
+    }
 }
