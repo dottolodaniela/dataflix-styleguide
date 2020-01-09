@@ -22,7 +22,6 @@
 .c-header {
     background-color: $color-blaulila;
     grid-area: head;
-    position: sticky;
     top: 0;
     z-index: 1;
 
@@ -38,8 +37,7 @@
 .c-nav {
     grid-area: nav;
     margin-right: 2rem;
-    margin-left: 4rem;
-    
+    margin-left: 4rem;    
 
     &__stickywrap {
         position: sticky;
