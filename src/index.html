@@ -54,7 +54,6 @@
 
             <ul class="c-nav__list">
                 <h4 class="c-nav__heading">Components</h4>
-                <li class="c-nav__listitem"><a class="c-nav__link" href="#component-header">Headings</a></li> <!-- lena -->
                 <li class="c-nav__listitem"><a class="c-nav__link" href="#component-paragraph">Paragraphs</a></li> <!-- lena -->
                 <li class="c-nav__listitem"><a class="c-nav__link" href="#component-link">Links</a></li> <!-- lena -->
                 <li class="c-nav__listitem"><a class="c-nav__link" href="#component-list">Lists</a></li> <!-- lena -->
@@ -237,13 +236,17 @@
                     can
                     be used to manipulate blocks or elements or to style a specific item differently than the others.
                     <br>
-                    The synstax is as follows: <br>
+                    The synstax is as follows: 
+                <p>
+                <pre>
                     <code class="c-section__code">
                         .block{};
                         .block--modifier{};
                         .block__element{};
                         .block__element--modifier{};
                     </code>
+                </pre>
+                <p class="c-section__text">
                     In addition there are two custom prefixes used: <br>
                     A component-block is prefixed with "c-" and indicates a standalone component. <br>
                     A "l-" marks a layout module. These modules are purely used for positioning c-components and
@@ -261,8 +264,8 @@
                 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
                 <p class="c-section__text">
                     If you wanna read more about BEM follow these links:
-                    <a class="c_section__link" href="http://getbem.com/">BEM</a>,
-                    <a class="c_section__link"
+                    <a class="c-section__link" href="http://getbem.com/">BEM</a>,
+                    <a class="c-section__link"
                         href="https://www.smashingmagazine.com/2016/06/battling-bem-extended-edition-common-problems-and-how-to-avoid-them/">Battling
                         with BEM</a>.
                 </p>
@@ -289,7 +292,7 @@
                     projects.
 
                     Sass can be downloaded here:
-                    <a class="c_section__link" href="https://sass-lang.com/install ">Install SASS</a>
+                    <a class="c-section__link" href="https://sass-lang.com/install ">Install SASS</a>
                 </p>
                 <h4 class="c-section__subheading">Variables</h4>
                 <p class="c-section__text">
@@ -318,6 +321,7 @@
             </section>
             <section class="c-section" id="css-files">
                 <h3 class="c-section__heading">File Structure</h3>
+                <div class="c-section__fs-wrapper">
                 <p class="c-section__text">
                     The open-source bundler Webpack is used to compile all JavaScript modules as well as
                     various front-end assets like HTML, CSS and images, if the corresponding loaders are included.
@@ -328,26 +332,27 @@
                     <a class="c-section__link" href="https://webpack.js.org/">Webpack</a>
                 </p>
                 <img class="c-section__img-filestructure" src="./images/file-structure.png" alt="File Structure">
+                </div>
             </section>
         </article>
 
         <article class="l-container">
             <h2 class="l-container__heading">Components</h2>
-            <section class="c-section" id="component-header">
-                <h3 class="c-section__heading">Headings</h3>
-                <p class="c-section__text">
-                    <!-- heading 1, 2, 3 (ist dann zwar doppelt aber egal) -->
-                </p>
-            </section>
             <section class="c-section" id="component-paragraph">
                 <h3 class="c-section__heading">Paragraphs</h3>
                 <p class="c-section__text">
                     <!-- paragraph info -->
                 </p>
                 <h5 class="c-section__example">Example</h5>
-                <p class="c-section__text">
-                    <!-- paragraph with headings -->
-                </p>
+                    <div class="c-example__paragraph">
+                            <h2 class="c-section__heading">Klaus</h2>
+                            <h3 class="c-section__subheading">General information</h3>
+                            <p class="c-section__text"><span class="c-section__text--bold">Klaus</span> is a 2019 Spanish animated Christmas comedy drama film written and directed by Sergio Pablos (in his directorial debut), produced by his company Sergio Pablos Animation Studios (also known as the SPA Studios) with the support of Aniventure and was distributed by Netflix as its first original animated feature. Co-written by Zach Lewis and Jim Mahoney, the film stars the voices of Jason Schwartzman, J. K. Simmons, Rashida Jones, Will Sasso, Neda Margrethe Labba, Sergio Pablos, Norm MacDonald, and Joan Cusack. 
+                            </p>
+                            <h3 class="c-section__subheading">Storyline</h3>
+                            <p class="c-section__text">When Jesper (Jason Schwartzman) distinguishes himself as the postal academy's worst student, he is stationed on a frozen island above the Arctic Circle, where the feuding locals hardly exchange words let alone letters. Jesper is about to give up when he finds an ally in local teacher Alva (Rashida Jones), and discovers Klaus (Oscar® winner J.K. Simmons), a mysterious carpenter who lives alone in a cabin full of handmade toys. These unlikely friendships return laughter to Smeerensburg, forging a new legacy of generous neighbors, magical lore and stockings hung by the chimney with care. An animated Christmas comedy directed by Despicable Me co-creator Sergio Pablos, KLAUS co-stars Rashida Jones, Jason Schwartzman and JK Simmons. Written by <a class="c-section__link" href="https://www.netflix.com/title/80183187">Netflix</a>
+                    </div>
+                
             </section>
             <section class="c-section" id="component-link">
                 <h3 class="c-section__heading">Links</h3>
@@ -355,9 +360,12 @@
                     <!-- infos zu links -->
                 </p>
                 <h5 class="c-section__example">Example</h5>
-                <p class="c-section__text">
-                    <!-- this is a link -->
+                <p class="codepen" data-height="265" data-theme-id="default" data-default-tab="css,result" data-user="llenaa" data-slug-hash="yLypPpP" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Links">
+                    <span>See the Pen <a href="https://codepen.io/llenaa/pen/yLypPpP">
+                    Links</a> by llenaa (<a href="https://codepen.io/llenaa">@llenaa</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
                 </p>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
             </section>
             <section class="c-section" id="component-link">
                 <h3 class="c-section__heading">Lists</h3>
@@ -365,20 +373,30 @@
                     <!-- infos zu lists -->
                 </p>
                 <h5 class="c-section__example">Examples</h5>
-                <ul class="c-section__list">
-                    <li class="c-section__listitem"></li>
-                    <li class="c-section__listitem"></li>
-                    <li class="c-section__listitem"></li>
-                </ul>
-                <!-- code snippet -->
-                <p class="c-section__text"> Notes </p>
-
-                <ol class="c-section__list">
-                    <li class="c-section__listitem"></li>
-                    <li class="c-section__listitem"></li>
-                    <li class="c-section__listitem"></li>
-                </ol>
-                <!-- code snippet -->
+                <div class="c-example__list">
+                    <div class="c-section__listwrapper">
+                        <h4 class="c-section__listheading">Movies you might enjoy</h4>
+                        <ul class="c-section__list">
+                        <li class="c-section__listitem">Gone Girl</li>
+                        <li class="c-section__listitem">Hidden Figures</li>
+                        <li class="c-section__listitem">The Irishman</li>
+                        </ul>
+                    </div>
+                    <div class="c-section__listwrapper dark">
+                        <h4 class="c-section__listheading">Recently wached tv shows</h4>
+                        <ol class="c-section__list">
+                        <li class="c-section__listitem">Orange Is the New Black</li>
+                        <li class="c-section__listitem">Modern Family</li>
+                        <li class="c-section__listitem">House of Cards</li>
+                        </ol>
+                    </div>
+                </div>
+                <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html" data-user="llenaa" data-slug-hash="povpjer" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Lists">
+                    <span>See the Pen <a href="https://codepen.io/llenaa/pen/povpjer">
+                    Lists</a> by llenaa (<a href="https://codepen.io/llenaa">@llenaa</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
                 <p class="c-section__text"> Notes </p>
             </section>
             <section class="c-section" id="component-button">
@@ -386,13 +404,23 @@
                 <h4 class="c-section__subheading">Basic Buttons</h4>
                 <h5 class="c-section__example">Example</h5>
                 <!-- buttons example mit hover usw. -->
-                <!-- code snippet -->
+                <p class="codepen" data-height="265" data-theme-id="default" data-default-tab="css,result" data-user="llenaa" data-slug-hash="bGNadNZ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Buttons Basic">
+                    <span>See the Pen <a href="https://codepen.io/llenaa/pen/bGNadNZ">
+                    Buttons Basic</a> by llenaa (<a href="https://codepen.io/llenaa">@llenaa</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
                 <p class="c-section__text"> Notes </p>
 
                 <h4 class="c-section__subheading">Additional Buttons</h4> <!-- scroll, info, etc. -->
                 <h5 class="c-section__example">Example</h5>
                 <!-- buttons example mit hover usw. -->
-                <!-- code snippet -->
+                <p class="codepen" data-height="265" data-theme-id="default" data-default-tab="css,result" data-user="llenaa" data-slug-hash="YzPYXmg" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Button Special">
+                    <span>See the Pen <a href="https://codepen.io/llenaa/pen/YzPYXmg">
+                    Button Special</a> by llenaa (<a href="https://codepen.io/llenaa">@llenaa</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
                 <p class="c-section__text"> Notes </p>
             </section>
             <section class="c-section" id="component-form">
@@ -540,6 +568,12 @@
         <!-- PAGE LAYOUTS !!!!!!!!!!!!! -->
 
     </main>
+
+    <footer class="c-footer">
+        <p class="c-footer__text">
+            © Daniela Dottolo and Lena Heiglauer
+        </p>
+    </footer>
 
 
 </body>
