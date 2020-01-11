@@ -68,9 +68,9 @@
 
             <ul class="c-nav__list">
                 <h4 class="c-nav__heading">Page Layouts</h4>
-                <li class="c-nav__listitem"><a class="c-nav__link" href="#layout-1">Layout 1</a></li>
-                <li class="c-nav__listitem"><a class="c-nav__link" href="#layout-2">Layout 2</a></li>
-                <li class="c-nav__listitem"><a class="c-nav__link" href="#layout-3">Layout 3</a></li>
+                <li class="c-nav__listitem"><a class="c-nav__link" href="#layout-1">Landing Page</a></li>
+                <li class="c-nav__listitem"><a class="c-nav__link" href="#layout-2">Stats – Pie Chart</a></li>
+                <li class="c-nav__listitem"><a class="c-nav__link" href="#layout-3">Stats – Bar Chart</a></li>
             </ul>
         </div>
     </nav>
@@ -317,6 +317,7 @@
 
                     element. For example, if the font-size of the root element is 16px, then 1rem equals 16px and 1px
                     equals 0,0625rem. <br>
+                    In case of precise specification you can use pixels (e.g border width).
                 </p>
             </section>
             <section class="c-section" id="css-processor">
@@ -606,25 +607,34 @@
         <article class="l-container">
             <h2 class="l-container__heading">Page Layouts</h2>
             <section class="c-section" id="layout-1">
-                <h3 class="c-section__heading">Layout 1</h3>
+                <h3 class="c-section__heading">Landing Page</h3>
                 <p class="c-section__text">
-                    <!-- layout für was -->
+                    This page layout is for the landing page.
+                    The global header always stick to the top. Important information is placed in the middle 
+                    of the page, semi-important information underneath.
+                    Claimers, explanations and all kinds of additional information for the user 
+                    is positioned in the bottom left corner.
                 </p>
-                <img class="c-layout" src="#" alt="">
+                <img class="c-layout" src="./images/layout_landing.jpg" alt="Layout Template Landing Page">
             </section>
             <section class="c-section" id="layout-2">
-                <h3 class="c-section__heading">Layout 2</h3>
+                <h3 class="c-section__heading">Stats – Pie Chart</h3>
                 <p class="c-section__text">
-                    <!-- layout für was -->
+                    If you use a pie chart to display data, the chart is positioned in the middle of the page. 
+                    More information to the chart is on its left and right side. <br>
+                    In case of comparing more than two data groups, the space can be split. So in case of three the two main boxes 
+                    are split into half horizontally. The bottom right box stays empty. In case of four data groups all four boxes are 
+                    filled with data.
                 </p>
-                <img class="c-layout" src="#" alt="">
+                <img class="c-layout" src="./images/layout_stats.jpg" alt="Layout Template Piechart">
             </section>
             <section class="c-section" id="layout-3">
-                <h3 class="c-section__heading">Layout 3</h3>
+                <h3 class="c-section__heading">Stats – Bar Chart</h3>
                 <p class="c-section__text">
-                    <!-- layout für was -->
+                    The third sample layout is for displaying data in a bar chart. The chart takes up most of the 
+                    page. Options for toggling the view of the bar chart are placed right above the chart.
                 </p>
-                <img class="c-layout" src="#" alt="">
+                <img class="c-layout" src="./images/layout_barchart.jpg" alt="Layout Template Barchart">
             </section>
         </article>
 
