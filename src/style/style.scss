@@ -200,17 +200,17 @@ main {
 
 .headingOne {
     font-size: 40px;
-    font-family: $font-family bold;
+    font-weight: bold;
 }
 
 .headingTwo {
     font-size: 32px;
-    font-family: $font-family bold;
+    font-weight: bold;
 }
 
 .headingThree {
     font-size: 28px;
-    font-family: $font-family bold;
+    font-weight: bold;
 }
 
 .bodyNormal {
@@ -220,7 +220,7 @@ main {
 
 .bodyBold {
     font-size: 20px;
-    font-family: $font-family bold;
+    font-weight: bold;
 }
 
 .buttonsMeta {
@@ -350,6 +350,13 @@ main {
 
 .bgdark {
     background-color: $color-darkgrey;
+}
+
+/* LAYOUT PAGES */
+.c-layout {
+    width: 82%;
+    height: auto;
+    margin-top: 0.7rem;
 }
 
 /* FOOTER */
