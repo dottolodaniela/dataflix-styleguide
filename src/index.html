@@ -62,16 +62,15 @@
                 <li class="c-nav__listitem"><a class="c-nav__link" href="#component-link">Links</a></li>
                 <li class="c-nav__listitem"><a class="c-nav__link" href="#component-list">Lists</a></li>
                 <li class="c-nav__listitem"><a class="c-nav__link" href="#component-button">Buttons</a></li>
-                <li class="c-nav__listitem"><a class="c-nav__link" href="#component-form">Form Elements</a></li>
-                <li class="c-nav__listitem"><a class="c-nav__link" href="#component-nav">Navigation</a></li>
-                <li class="c-nav__listitem"><a class="c-nav__link" href="#component-icon">Icons</a></li>
+                <li class="c-nav__listitem"><a class="c-nav__link" href="#component-form">Form Elements</a></li> 
+                <li class="c-nav__listitem"><a class="c-nav__link" href="#component-nav">Navigation</a></li> 
             </ul>
 
             <ul class="c-nav__list">
                 <h4 class="c-nav__heading">Page Layouts</h4>
-                <li class="c-nav__listitem"><a class="c-nav__link" href="#">Layout 1</a></li>
-                <li class="c-nav__listitem"><a class="c-nav__link" href="#">Layout 2</a></li>
-                <li class="c-nav__listitem"><a class="c-nav__link" href="#">Layout 3</a></li>
+                <li class="c-nav__listitem"><a class="c-nav__link" href="#layout-1">Layout 1</a></li>
+                <li class="c-nav__listitem"><a class="c-nav__link" href="#layout-2">Layout 2</a></li>
+                <li class="c-nav__listitem"><a class="c-nav__link" href="#layout-3">Layout 3</a></li>
             </ul>
         </div>
     </nav>
@@ -114,7 +113,7 @@
                         <table class="c-colorbox__colorcode">
                             <tr class="c-colorbox__tablerow">
                                 <td class="c-colorbox__tabledata">HEX</td>
-                                <td class="c-colorbox__tabledata">#795de2</td>
+                                <td class="c-colorbox__tabledata">#795DE2</td>
                             </tr>
                             <tr class="c-colorbox__tablerow">
                                 <td class="c-colorbox__tabledata">RGB</td>
@@ -209,7 +208,7 @@
                 <p class="c-section__text">
                     Please don’t alter or distort the “Dataflix” logo except to change its sizing while preserving the
                     original proportions.
-                    The Logo should only be used on RED and DARKGREY and is always
+                    The logo should only be used on RED and DARKGREY and is always
                     positioned in the upper left corner
                     or in the top center.
                 </p>
@@ -266,14 +265,16 @@
                 <h3 class="c-section__heading">Class Naming Convention – BEM</h3>
                 <p class="c-section__text">
                     The BEM (Block, Element, Modifier) methodology is a popular naming convention for
-                    CSS and HTML classes. It consists of a block, which is a top-level abstraction of a componenet,
-                    one or more elements, which can be refered to as child item from the block, and modifiers. Modifiers
+                    CSS and HTML classes. It consists of a block, which is a top-level abstraction of a component,
+                    one or more elements, which can be refered to as child items from the block, and modifiers. Modifiers
                     can
                     be used to manipulate blocks or elements or to style a specific item differently than the others.
                     <br>
-                    The synstax is as follows:
 
-                    <pre>
+                    The syntax is as follows: 
+                
+                <pre>
+
                     <code class="c-section__code">
 .block{};
 .block--modifier{};
@@ -298,7 +299,7 @@
                 </p>
                 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
                 <p class="c-section__text">
-                    If you wanna read more about BEM follow these links:
+                    If you want to read more about BEM follow these links:
                     <a class="c-section__link" href="http://getbem.com/">BEM</a>,
                     <a class="c-section__link"
                         href="https://www.smashingmagazine.com/2016/06/battling-bem-extended-edition-common-problems-and-how-to-avoid-them/">Battling
@@ -308,10 +309,12 @@
             <section class="c-section" id="css-units">
                 <h3 class="c-section__heading">Units</h3>
                 <p class="c-section__text">
+
                     Mesurements regarding typography, e.g font-size, letter-spacing or line-height, as well as margin,
                     padding,
                     width and height are declared in <span class="c-section__text--bold">rem</span>. Rem values are
                     relative to the root html
+
                     element. For example, if the font-size of the root element is 16px, then 1rem equals 16px and 1px
                     equals 0,0625rem. <br>
                 </p>
@@ -377,6 +380,7 @@
                         <a class="c-section__link" href="https://webpack.js.org/">Webpack</a>
                     </p>
                     <img class="c-section__img-filestructure" src="./images/file-structure.png" alt="File Structure">
+
                 </div>
             </section>
         </article>
@@ -416,8 +420,7 @@
             <section class="c-section" id="component-link">
                 <h3 class="c-section__heading">Links</h3>
                 <p class="c-section__text">
-                    Your can choose betweent different link styles but please keep consistency in using the chosen
-                    styling and don't
+                    Your can choose between different link styles but please keep consistency in using the chosen styling and don't 
                     switch between styles.
                 </p>
                 <h5 class="c-section__example">Example</h5>
@@ -471,7 +474,7 @@
                 <h3 class="c-section__heading">Buttons</h3>
                 <h4 class="c-section__subheading">Basic Buttons</h4>
                 <p class="c-section__text">
-                    Basic buttons are used for things like "Submit", "Send" or "Cancel". If a button is inactive, its
+                    Basic buttons are used for functionalities like "Submit", "Send" or "Cancel". If a button is inactive, its 
                     opacity is set to 40% and the cursor it set to "default".
                 </p>
                 <h5 class="c-section__example">Example</h5>
@@ -597,14 +600,33 @@
 
                 <p class="c-section__text"> Notes </p>
             </section>
-            <section class="c-section" id="component-icon">
-                <h3 class="c-section__heading">Icons</h3>
-                <!-- icon (icon and name) -->
-                <!-- purpose -->
-            </section>
+
         </article>
 
-        <!-- PAGE LAYOUTS !!!!!!!!!!!!! -->
+        <article class="l-container">
+            <h2 class="l-container__heading">Page Layouts</h2>
+            <section class="c-section" id="layout-1">
+                <h3 class="c-section__heading">Layout 1</h3>
+                <p class="c-section__text">
+                    <!-- layout für was -->
+                </p>
+                <img class="c-layout" src="#" alt="">
+            </section>
+            <section class="c-section" id="layout-2">
+                <h3 class="c-section__heading">Layout 2</h3>
+                <p class="c-section__text">
+                    <!-- layout für was -->
+                </p>
+                <img class="c-layout" src="#" alt="">
+            </section>
+            <section class="c-section" id="layout-3">
+                <h3 class="c-section__heading">Layout 3</h3>
+                <p class="c-section__text">
+                    <!-- layout für was -->
+                </p>
+                <img class="c-layout" src="#" alt="">
+            </section>
+        </article>
 
     </main>
 
