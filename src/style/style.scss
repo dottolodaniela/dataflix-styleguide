@@ -8,6 +8,10 @@
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 main {
     margin: 0 4rem,
 }
@@ -20,6 +24,7 @@ main {
     grid-column-gap: 1rem;
     grid-row-gap: 3rem;
     font-family: $font-family;
+    font-size: $fs-body;
     color: $color-darkgrey;
 }
 
@@ -38,7 +43,7 @@ main {
     }
 
     &__heading {
-        font-size: 1.5rem;
+        font-size: $fs-heading2;
         color: white;
         text-align: center;
         padding: 1rem 0;
@@ -120,6 +125,10 @@ main {
 .l-container {
     margin: 3rem 0;
     border-bottom: solid 1px $color-darkgrey;
+
+    &__heading {
+        font-size: $fs-heading2;
+    }
 }
 
 /* SECTIONS */
@@ -130,16 +139,20 @@ main {
     &__heading {
         padding-top: 1.5rem;
         padding-bottom: 0.5rem;
+        font-size: $fs-heading3;
     }
 
     &__subheading {
-        margin: 1rem 0;
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+        font-size: $fs-heading4;
     }
 
     &__text {
         max-width: 40rem;
         line-height: 1.5rem;
-        margin: 1rem 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     &__link {
@@ -150,6 +163,12 @@ main {
         &:hover {
             text-decoration: underline;
         }
+    }
+
+    &__example {
+        font-size: $fs-heading5;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
     }
 
     &__fs-wrapper {
