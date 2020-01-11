@@ -11,22 +11,26 @@
 
 <body class="l-body">
     <header class="c-header">
-        <svg class="c-header__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="328" height="111" viewBox="10 0 305 111">
+        <svg class="c-header__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="328" height="111" viewBox="10 0 305 111">
             <defs>
                 <filter id="Dataflix" x="15" y="-3" width="293" height="132" filterUnits="userSpaceOnUse">
-                <feOffset dy="3" input="SourceAlpha"/>
-                <feGaussianBlur stdDeviation="2" result="blur"/>
-                <feFlood flood-opacity="0.604"/>
-                <feComposite operator="in" in2="blur"/>
-                <feComposite in="SourceGraphic"/>
+                    <feOffset dy="3" input="SourceAlpha" />
+                    <feGaussianBlur stdDeviation="2" result="blur" />
+                    <feFlood flood-opacity="0.604" />
+                    <feComposite operator="in" in2="blur" />
+                    <feComposite in="SourceGraphic" />
                 </filter>
                 <clipPath id="clip-Artboard_1">
-                <rect width="328" height="111"/>
+                    <rect width="328" height="111" />
                 </clipPath>
             </defs>
             <g id="Artboard_1" data-name="Artboard – 1" clip-path="url(#clip-Artboard_1)">
                 <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Dataflix)">
-                <text id="Dataflix-2" data-name="Dataflix" transform="translate(21 90)" fill="#fff" font-size="100" font-family="BebasNeue, Bebas Neue"><tspan x="0" y="0">Dataflix</tspan></text>
+                    <text id="Dataflix-2" data-name="Dataflix" transform="translate(21 90)" fill="#fff" font-size="100"
+                        font-family="BebasNeue, Bebas Neue">
+                        <tspan x="0" y="0">Dataflix</tspan>
+                    </text>
                 </g>
             </g>
         </svg>
@@ -54,9 +58,9 @@
 
             <ul class="c-nav__list">
                 <h4 class="c-nav__heading">Components</h4>
-                <li class="c-nav__listitem"><a class="c-nav__link" href="#component-paragraph">Paragraphs</a></li> 
-                <li class="c-nav__listitem"><a class="c-nav__link" href="#component-link">Links</a></li> 
-                <li class="c-nav__listitem"><a class="c-nav__link" href="#component-list">Lists</a></li> 
+                <li class="c-nav__listitem"><a class="c-nav__link" href="#component-paragraph">Paragraphs</a></li>
+                <li class="c-nav__listitem"><a class="c-nav__link" href="#component-link">Links</a></li>
+                <li class="c-nav__listitem"><a class="c-nav__link" href="#component-list">Lists</a></li>
                 <li class="c-nav__listitem"><a class="c-nav__link" href="#component-button">Buttons</a></li>
                 <li class="c-nav__listitem"><a class="c-nav__link" href="#component-form">Form Elements</a></li> 
                 <li class="c-nav__listitem"><a class="c-nav__link" href="#component-nav">Navigation</a></li> 
@@ -158,7 +162,7 @@
                 </div>
             </section>
             <section class="c-section" id="foundations-typographie">
-                <h3 class="c-section__heading" >Typography</h3>
+                <h3 class="c-section__heading">Typography</h3>
                 <h4 class="c-section__subheading">Fonts</h4>
                 <p class="c-section__text">
                     <span class="c-section__text-arial">This is Helvetica.</span>
@@ -224,12 +228,34 @@
                     clear.
                 </p>
                 <h4 class="c-section__subheading">Pie Chart</h4>
-                <img class="c-section__image">
-                <p class="c-section__text"> Notes </p>
+                <p class="c-section__text">
+                     If you're using a pie chart, always use a combination of our specified colors.
+                     For clearer visibility, you can use a dark border on bright backgrounds and 
+                     the other way around.
+                    </p>
+                <img class="c-section__image-piechart" src="images/piechart.jpg" alt="Example piechart">
+
 
                 <h4 class="c-section__subheading">Bar Chart</h4>
-                <img class="c-section__image">
-                <p class="c-section__text"> Notes </p>
+                <p class="c-section__text">
+                    For visualizations with bar charts, the x and y axis always
+                    have to be labeled.
+                    Do not round up the corners!
+                    The bars themselves can either all be in one of our specified colors
+                    or mixed up to a maximum of 2.
+                    If you choose to mix colors, you have two options:
+                    <ul>
+                        <li>
+                            Alternate between the 2
+                        </li>
+                        <li>
+                            First half in one color, second half in the other
+                        </li>
+                    </ul>
+                </p>
+                <img class="c-section__image-barchart" src="images/barchart.jpg" alt="Example barchart">
+
+
             </section>
         </article>
 
@@ -244,9 +270,11 @@
                     can
                     be used to manipulate blocks or elements or to style a specific item differently than the others.
                     <br>
+
                     The syntax is as follows: 
                 
                 <pre>
+
                     <code class="c-section__code">
 .block{};
 .block--modifier{};
@@ -254,7 +282,7 @@
 .block__element--modifier{};
                     </code>
                 </pre>
-                
+
                     In addition there are two custom prefixes used: <br>
                     A component-block is prefixed with "c-" and indicates a standalone component. <br>
                     A "l-" marks a layout module. These modules are purely used for positioning c-components and
@@ -281,8 +309,12 @@
             <section class="c-section" id="css-units">
                 <h3 class="c-section__heading">Units</h3>
                 <p class="c-section__text">
-                    Measurements regarding typography, e.g font-size, letter-spacing or line-height, as well as margin, padding, 
-                    width and height are declared in <span class="c-section__text--bold">rem</span>. Rem values are relative to the root html
+
+                    Mesurements regarding typography, e.g font-size, letter-spacing or line-height, as well as margin,
+                    padding,
+                    width and height are declared in <span class="c-section__text--bold">rem</span>. Rem values are
+                    relative to the root html
+
                     element. For example, if the font-size of the root element is 16px, then 1rem equals 16px and 1px
                     equals 0,0625rem. <br>
                     In case of precise specification you can use pixels (e.g border width).
@@ -307,13 +339,17 @@
                     The $ symbol is used to create a variable.
                     Here's a basic example:
                 </p>
-                <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="dottolodaniela" data-slug-hash="wvBjyxX" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="wvBjyxX">
+                <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="css,result"
+                    data-user="dottolodaniela" data-slug-hash="wvBjyxX"
+                    style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+                    data-pen-title="wvBjyxX">
                     <span>See the Pen <a href="https://codepen.io/dottolodaniela/pen/wvBjyxX">
-                    wvBjyxX</a> by dottolodaniela (<a href="https://codepen.io/dottolodaniela">@dottolodaniela</a>)
-                    on <a href="https://codepen.io">CodePen</a>.</span>
-                  </p>
-                  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-                
+                            wvBjyxX</a> by dottolodaniela (<a
+                            href="https://codepen.io/dottolodaniela">@dottolodaniela</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
                 <h4 class="c-section__subheading">Nesting</h4>
                 <p class="c-section__text">
                     Nesting is a great way to organize CSS and make it more readable.
@@ -334,16 +370,18 @@
             <section class="c-section" id="css-files">
                 <h3 class="c-section__heading">File Structure</h3>
                 <div class="c-section__fs-wrapper">
-                <p class="c-section__text">
-                    The open-source bundler Webpack is used to compile all JavaScript modules as well as
-                    various front-end assets like HTML, CSS and images, if the corresponding loaders are included.
-                    Therefore, all components needed for this compilation are stored in the scr-folder. After processing,
-                    the final files will be stored in the dist-folder.
-                    <br>
-                    More information about Webpack:
-                    <a class="c-section__link" href="https://webpack.js.org/">Webpack</a>
-                </p>
-                <img class="c-section__img-filestructure" src="./images/file-structure.png" alt="File Structure">
+                    <p class="c-section__text">
+                        The open-source bundler Webpack is used to compile all JavaScript modules as well as
+                        various front-end assets like HTML, CSS and images, if the corresponding loaders are included.
+                        Therefore, all components needed for this compilation are stored in the scr-folder. After
+                        processing
+                        the final files will be stored in the dist-folder.
+                        <br>
+                        More information about Webpack:
+                        <a class="c-section__link" href="https://webpack.js.org/">Webpack</a>
+                    </p>
+                    <img class="c-section__img-filestructure" src="./images/file-structure.png" alt="File Structure">
+
                 </div>
             </section>
         </article>
@@ -356,14 +394,29 @@
                     The default body text is 1rem. For optimum reading length, the paragraph width is capped at 40rem.
                 </p>
                 <h5 class="c-section__example">Example</h5>
-                    <div class="c-example__paragraph">
-                            <h2 class="c-example__heading">Klaus</h2>
-                            <h3 class="c-example__subheading">General information</h3>
-                            <p class="c-example__text"><span class="c-example__text--bold">Klaus</span> is a 2019 Spanish animated Christmas comedy drama film written and directed by Sergio Pablos (in his directorial debut), produced by his company Sergio Pablos Animation Studios (also known as the SPA Studios) with the support of Aniventure and was distributed by Netflix as its first original animated feature. Co-written by Zach Lewis and Jim Mahoney, the film stars the voices of Jason Schwartzman, J. K. Simmons, Rashida Jones, Will Sasso, Neda Margrethe Labba, Sergio Pablos, Norm MacDonald, and Joan Cusack. 
-                            </p>
-                            <h3 class="c-example__subheading">Storyline</h3>
-                            <p class="c-example__text">When Jesper (Jason Schwartzman) distinguishes himself as the postal academy's worst student, he is stationed on a frozen island above the Arctic Circle, where the feuding locals hardly exchange words let alone letters. Jesper is about to give up when he finds an ally in local teacher Alva (Rashida Jones), and discovers Klaus (Oscar® winner J.K. Simmons), a mysterious carpenter who lives alone in a cabin full of handmade toys. These unlikely friendships return laughter to Smeerensburg, forging a new legacy of generous neighbors, magical lore and stockings hung by the chimney with care. An animated Christmas comedy directed by Despicable Me co-creator Sergio Pablos, KLAUS co-stars Rashida Jones, Jason Schwartzman and JK Simmons. Written by <a class="c-section__link" href="https://www.netflix.com/title/80183187">Netflix</a>
-                    </div>
+                <div class="c-example__paragraph">
+                    <h2 class="c-example__heading">Klaus</h2>
+                    <h3 class="c-example__subheading">General information</h3>
+                    <p class="c-example__text"><span class="c-example__text--bold">Klaus</span> is a 2019 Spanish
+                        animated Christmas comedy drama film written and directed by Sergio Pablos (in his directorial
+                        debut), produced by his company Sergio Pablos Animation Studios (also known as the SPA Studios)
+                        with the support of Aniventure and was distributed by Netflix as its first original animated
+                        feature. Co-written by Zach Lewis and Jim Mahoney, the film stars the voices of Jason
+                        Schwartzman, J. K. Simmons, Rashida Jones, Will Sasso, Neda Margrethe Labba, Sergio Pablos, Norm
+                        MacDonald, and Joan Cusack.
+                    </p>
+                    <h3 class="c-example__subheading">Storyline</h3>
+                    <p class="c-example__text">When Jesper (Jason Schwartzman) distinguishes himself as the postal
+                        academy's worst student, he is stationed on a frozen island above the Arctic Circle, where the
+                        feuding locals hardly exchange words let alone letters. Jesper is about to give up when he finds
+                        an ally in local teacher Alva (Rashida Jones), and discovers Klaus (Oscar® winner J.K. Simmons),
+                        a mysterious carpenter who lives alone in a cabin full of handmade toys. These unlikely
+                        friendships return laughter to Smeerensburg, forging a new legacy of generous neighbors, magical
+                        lore and stockings hung by the chimney with care. An animated Christmas comedy directed by
+                        Despicable Me co-creator Sergio Pablos, KLAUS co-stars Rashida Jones, Jason Schwartzman and JK
+                        Simmons. Written by <a class="c-section__link"
+                            href="https://www.netflix.com/title/80183187">Netflix</a>
+                </div>
             </section>
             <section class="c-section" id="component-link">
                 <h3 class="c-section__heading">Links</h3>
@@ -372,17 +425,21 @@
                     switch between styles.
                 </p>
                 <h5 class="c-section__example">Example</h5>
-                <p class="codepen" data-height="265" data-theme-id="default" data-default-tab="css,result" data-user="llenaa" data-slug-hash="yLypPpP" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Links">
+                <p class="codepen" data-height="265" data-theme-id="default" data-default-tab="css,result"
+                    data-user="llenaa" data-slug-hash="yLypPpP"
+                    style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+                    data-pen-title="Links">
                     <span>See the Pen <a href="https://codepen.io/llenaa/pen/yLypPpP">
-                    Links</a> by llenaa (<a href="https://codepen.io/llenaa">@llenaa</a>)
-                    on <a href="https://codepen.io">CodePen</a>.</span>
+                            Links</a> by llenaa (<a href="https://codepen.io/llenaa">@llenaa</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
                 </p>
                 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
             </section>
             <section class="c-section" id="component-link">
                 <h3 class="c-section__heading">Lists</h3>
                 <p class="c-section__text">
-                    If a list has a title, make sure it is centered. To define an unordered list use the html tag &lt;ul&gt;, for 
+                    If a list has a title, make sure it is centered. To define an unordered list use the html tag
+                    &lt;ul&gt;, for
                     ordered lists use &lt;ol&gt;.
                 </p>
                 <h5 class="c-section__example">Examples</h5>
@@ -390,24 +447,27 @@
                     <div class="c-section__listwrapper">
                         <h4 class="c-section__listheading">Movies you might enjoy</h4>
                         <ul class="c-section__list">
-                        <li class="c-section__listitem">Gone Girl</li>
-                        <li class="c-section__listitem">Hidden Figures</li>
-                        <li class="c-section__listitem">The Irishman</li>
+                            <li class="c-section__listitem">Gone Girl</li>
+                            <li class="c-section__listitem">Hidden Figures</li>
+                            <li class="c-section__listitem">The Irishman</li>
                         </ul>
                     </div>
                     <div class="c-section__listwrapper dark">
                         <h4 class="c-section__listheading">Recently wached tv shows</h4>
                         <ol class="c-section__list">
-                        <li class="c-section__listitem">Orange Is the New Black</li>
-                        <li class="c-section__listitem">Modern Family</li>
-                        <li class="c-section__listitem">House of Cards</li>
+                            <li class="c-section__listitem">Orange Is the New Black</li>
+                            <li class="c-section__listitem">Modern Family</li>
+                            <li class="c-section__listitem">House of Cards</li>
                         </ol>
                     </div>
                 </div>
-                <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html" data-user="llenaa" data-slug-hash="povpjer" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Lists">
+                <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html" data-user="llenaa"
+                    data-slug-hash="povpjer"
+                    style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+                    data-pen-title="Lists">
                     <span>See the Pen <a href="https://codepen.io/llenaa/pen/povpjer">
-                    Lists</a> by llenaa (<a href="https://codepen.io/llenaa">@llenaa</a>)
-                    on <a href="https://codepen.io">CodePen</a>.</span>
+                            Lists</a> by llenaa (<a href="https://codepen.io/llenaa">@llenaa</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
                 </p>
                 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
             </section>
@@ -420,24 +480,31 @@
                 </p>
                 <h5 class="c-section__example">Example</h5>
 
-                <p class="codepen" data-height="265" data-theme-id="default" data-default-tab="css,result" data-user="llenaa" data-slug-hash="bGNadNZ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Buttons Basic">
+                <p class="codepen" data-height="265" data-theme-id="default" data-default-tab="css,result"
+                    data-user="llenaa" data-slug-hash="bGNadNZ"
+                    style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+                    data-pen-title="Buttons Basic">
                     <span>See the Pen <a href="https://codepen.io/llenaa/pen/bGNadNZ">
-                    Buttons Basic</a> by llenaa (<a href="https://codepen.io/llenaa">@llenaa</a>)
-                    on <a href="https://codepen.io">CodePen</a>.</span>
+                            Buttons Basic</a> by llenaa (<a href="https://codepen.io/llenaa">@llenaa</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
                 </p>
                 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
                 <h4 class="c-section__subheading">Additional Buttons</h4>
                 <p class="c-section__text">
-                    Buttons that indicate scrolling, a search function or additional information like instructions or 
-                    claimers are included in the category "Additional Buttons". Their styling depends on their functionality. 
+                    Buttons that indicate scrolling, a search function or additional information like instructions or
+                    claimers are included in the category "Additional Buttons". Their styling depends on their
+                    functionality.
                     The inactive behaviour is the same as for basic buttons.
                 </p>
                 <h5 class="c-section__example">Example</h5>
-                <p class="codepen" data-height="265" data-theme-id="default" data-default-tab="css,result" data-user="llenaa" data-slug-hash="YzPYXmg" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Button Special">
+                <p class="codepen" data-height="265" data-theme-id="default" data-default-tab="css,result"
+                    data-user="llenaa" data-slug-hash="YzPYXmg"
+                    style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+                    data-pen-title="Button Special">
                     <span>See the Pen <a href="https://codepen.io/llenaa/pen/YzPYXmg">
-                    Button Special</a> by llenaa (<a href="https://codepen.io/llenaa">@llenaa</a>)
-                    on <a href="https://codepen.io">CodePen</a>.</span>
+                            Button Special</a> by llenaa (<a href="https://codepen.io/llenaa">@llenaa</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
                 </p>
                 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
             </section>
@@ -446,74 +513,17 @@
                 <h4 class="c-section__subheading">Drop Down Selection</h4>
                 <h5 class="c-section__example">Example</h5>
 
-                <div class="dropdown">
-                    <button class="dropbtn">Day</button>
-                    <div class="dropdown-css">
-                        <a href="#">-</a>
-                        <a href="#">1</a>
-                        <a href="#">2</a>
-                        <a href="#">3</a>
-                        <a href="#">4</a>
-                        <a href="#">5</a>
-                        <a href="#">6</a>
-                        <a href="#">7</a>
-                        <a href="#">8</a>
-                        <a href="#">9</a>
-                        <a href="#">10</a>
-                        <a href="#">11</a>
-                        <a href="#">12</a>
-                        <a href="#">13</a>
-                        <a href="#">14</a>
-                        <a href="#">15</a>
-                        <a href="#">16</a>
-                        <a href="#">17</a>
-                        <a href="#">18</a>
-                        <a href="#">19</a>
-                        <a href="#">20</a>
-                        <a href="#">21</a>
-                        <a href="#">22</a>
-                        <a href="#">23</a>
-                        <a href="#">24</a>
-                        <a href="#">25</a>
-                        <a href="#">26</a>
-                        <a href="#">27</a>
-                        <a href="#">28</a>
-                        <a href="#">29</a>
-                        <a href="#">30</a>
-                        <a href="#">31</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <button class="dropbtn">Month</button>
-                    <div class="dropdown-css">
-                        <a href="#">January</a>
-                        <a href="#">February</a>
-                        <a href="#">March</a>
-                        <a href="#">April</a>
-                        <a href="#">May</a>
-                        <a href="#">June</a>
-                        <a href="#">July</a>
-                        <a href="#">August</a>
-                        <a href="#">September</a>
-                        <a href="#">October</a>
-                        <a href="#">November</a>
-                        <a href="#">December</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <button class="dropbtn">Year</button>
-                    <div class="dropdown-css">
-                        <a href="#">2018</a>
-                        <a href="#">2019</a>
-                        <a href="#">2020</a>
-                    </div>
-                </div>
-                <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="dottolodaniela" data-slug-hash="XWJZyMe" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="XWJZyMe">
+                <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="css,result"
+                    data-user="dottolodaniela" data-slug-hash="XWJZyMe"
+                    style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+                    data-pen-title="XWJZyMe">
                     <span>See the Pen <a href="https://codepen.io/dottolodaniela/pen/XWJZyMe">
-                    XWJZyMe</a> by dottolodaniela (<a href="https://codepen.io/dottolodaniela">@dottolodaniela</a>)
-                    on <a href="https://codepen.io">CodePen</a>.</span>
-                  </p>
-                  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                            XWJZyMe</a> by dottolodaniela (<a
+                            href="https://codepen.io/dottolodaniela">@dottolodaniela</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
             </section>
             <section class="c-section">
                 <h4 class="c-section__subheading">Search Input</h4>
@@ -529,51 +539,59 @@
                 <p class="c-section__text">Navigation with only the logo:</p>
 
                 <nav class="example2-navbar">
-                    <svg class="example-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="328" height="111" viewBox="0 0 328 111">
+                    <svg class="example-svg" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="328" height="111" viewBox="0 0 328 111">
                         <defs>
-                          <filter id="Dataflix" x="15" y="-3" width="293" height="132" filterUnits="userSpaceOnUse">
-                            <feOffset dy="3" input="SourceAlpha"/>
-                            <feGaussianBlur stdDeviation="2" result="blur"/>
-                            <feFlood flood-opacity="0.604"/>
-                            <feComposite operator="in" in2="blur"/>
-                            <feComposite in="SourceGraphic"/>
-                          </filter>
-                          <clipPath id="clip-Artboard_1">
-                            <rect width="328" height="111"/>
-                          </clipPath>
+                            <filter id="Dataflix" x="15" y="-3" width="293" height="132" filterUnits="userSpaceOnUse">
+                                <feOffset dy="3" input="SourceAlpha" />
+                                <feGaussianBlur stdDeviation="2" result="blur" />
+                                <feFlood flood-opacity="0.604" />
+                                <feComposite operator="in" in2="blur" />
+                                <feComposite in="SourceGraphic" />
+                            </filter>
+                            <clipPath id="clip-Artboard_1">
+                                <rect width="328" height="111" />
+                            </clipPath>
                         </defs>
                         <g id="Artboard_1" data-name="Artboard – 1" clip-path="url(#clip-Artboard_1)">
-                          <rect width="328" height="111" fill-opacity="0"/>
-                          <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Dataflix)">
-                            <text id="Dataflix-2" data-name="Dataflix" transform="translate(21 90)" fill="#fff" font-size="100" font-family="BebasNeue, Bebas Neue"><tspan x="0" y="0">Dataflix</tspan></text>
-                          </g>
+                            <rect width="328" height="111" fill-opacity="0" />
+                            <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Dataflix)">
+                                <text id="Dataflix-2" data-name="Dataflix" transform="translate(21 90)" fill="#fff"
+                                    font-size="100" font-family="BebasNeue, Bebas Neue">
+                                    <tspan x="0" y="0">Dataflix</tspan>
+                                </text>
+                            </g>
                         </g>
-                      </svg>
+                    </svg>
                 </nav>
 
                 <p class="c-section__text">Navigation with links:</p>
 
                 <nav class="example-navbar">
-                    <svg class="example-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="328" height="111" viewBox="0 0 328 111">
+                    <svg class="example-svg" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="328" height="111" viewBox="0 0 328 111">
                         <defs>
-                          <filter id="Dataflix" x="15" y="-3" width="293" height="132" filterUnits="userSpaceOnUse">
-                            <feOffset dy="3" input="SourceAlpha"/>
-                            <feGaussianBlur stdDeviation="2" result="blur"/>
-                            <feFlood flood-opacity="0.604"/>
-                            <feComposite operator="in" in2="blur"/>
-                            <feComposite in="SourceGraphic"/>
-                          </filter>
-                          <clipPath id="clip-Artboard_1">
-                            <rect width="328" height="111"/>
-                          </clipPath>
+                            <filter id="Dataflix" x="15" y="-3" width="293" height="132" filterUnits="userSpaceOnUse">
+                                <feOffset dy="3" input="SourceAlpha" />
+                                <feGaussianBlur stdDeviation="2" result="blur" />
+                                <feFlood flood-opacity="0.604" />
+                                <feComposite operator="in" in2="blur" />
+                                <feComposite in="SourceGraphic" />
+                            </filter>
+                            <clipPath id="clip-Artboard_1">
+                                <rect width="328" height="111" />
+                            </clipPath>
                         </defs>
                         <g id="Artboard_1" data-name="Artboard – 1" clip-path="url(#clip-Artboard_1)">
-                          <rect width="328" height="111" fill="#fff" fill-opacity="0"/>
-                          <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Dataflix)">
-                            <text id="Dataflix-2" data-name="Dataflix" transform="translate(21 90)" fill="#fff" font-size="100" font-family="BebasNeue, Bebas Neue"><tspan x="0" y="0">Dataflix</tspan></text>
-                          </g>
+                            <rect width="328" height="111" fill="#fff" fill-opacity="0" />
+                            <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Dataflix)">
+                                <text id="Dataflix-2" data-name="Dataflix" transform="translate(21 90)" fill="#fff"
+                                    font-size="100" font-family="BebasNeue, Bebas Neue">
+                                    <tspan x="0" y="0">Dataflix</tspan>
+                                </text>
+                            </g>
                         </g>
-                      </svg>
+                    </svg>
                     <ul class="example-navbar__list">
                         <li class="example-navbar__listitem"><a href=# class="navhover3">Service</a></li>
                         <li class="example-navbar__listitem"><a href=# class="navhover3">Products</a></li>
