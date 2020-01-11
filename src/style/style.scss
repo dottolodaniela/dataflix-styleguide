@@ -114,6 +114,11 @@ main {
     margin: 1rem 0;
     padding-bottom: 2rem;
 
+    &__heading {
+        font-size: $fs-heading2;
+        margin-bottom: 1.5rem;
+    }
+
     &__text {
         max-width: 40rem;
         line-height: 1.5rem;
@@ -125,6 +130,10 @@ main {
 .l-container {
     margin: 3rem 0;
     border-bottom: solid 1px $color-darkgrey;
+
+    &:last-child {
+        border: none;
+    }
 
     &__heading {
         font-size: $fs-heading2;
