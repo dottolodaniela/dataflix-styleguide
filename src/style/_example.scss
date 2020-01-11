@@ -103,8 +103,40 @@
     color: #ffffff;
   }
 
-  .c-example__paragraph {
-    margin-left: 2rem;
+  .c-example {
+  
+    &__paragraph {
+      margin-left: 2rem;
+    }
+    &__heading {
+        padding-top: 1.5rem;
+        padding-bottom: 0.5rem;
+        font-size: $fs-heading3;
+    }
+
+    &__subheading {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: $fs-heading4;
+    }
+
+    &__text {
+        max-width: 40rem;
+        line-height: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    &__link {
+        font-weight: bold;
+        text-decoration: none;
+        color: $color-red;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
   }
 
   
@@ -113,8 +145,7 @@
     padding: 1.6rem 1.2rem;
     width: 19rem;
     display: inline-block;
-    margin-top: 1rem;
-    margin-left: 2rem;
+    margin-bottom: 1rem;
   }
   
   .c-section__listheading {
