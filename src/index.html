@@ -62,8 +62,8 @@
                 <li class="c-nav__listitem"><a class="c-nav__link" href="#component-link">Links</a></li>
                 <li class="c-nav__listitem"><a class="c-nav__link" href="#component-list">Lists</a></li>
                 <li class="c-nav__listitem"><a class="c-nav__link" href="#component-button">Buttons</a></li>
-                <li class="c-nav__listitem"><a class="c-nav__link" href="#component-form">Form Elements</a></li> 
-                <li class="c-nav__listitem"><a class="c-nav__link" href="#component-nav">Navigation</a></li> 
+                <li class="c-nav__listitem"><a class="c-nav__link" href="#component-form">Form Elements</a></li>
+                <li class="c-nav__listitem"><a class="c-nav__link" href="#component-nav">Navigation</a></li>
             </ul>
 
             <ul class="c-nav__list">
@@ -229,10 +229,10 @@
                 </p>
                 <h4 class="c-section__subheading">Pie Chart</h4>
                 <p class="c-section__text">
-                     If you're using a pie chart, always use a combination of our specified colors.
-                     For clearer visibility, you can use a dark border on bright backgrounds and 
-                     the other way around.
-                    </p>
+                    If you're using a pie chart, always use a combination of our specified colors.
+                    For clearer visibility, you can use a dark border on bright backgrounds and
+                    the other way around.
+                </p>
                 <img class="c-section__image-piechart" src="images/piechart.jpg" alt="Example piechart">
 
 
@@ -266,14 +266,15 @@
                 <p class="c-section__text">
                     The BEM (Block, Element, Modifier) methodology is a popular naming convention for
                     CSS and HTML classes. It consists of a block, which is a top-level abstraction of a component,
-                    one or more elements, which can be refered to as child items from the block, and modifiers. Modifiers
+                    one or more elements, which can be refered to as child items from the block, and modifiers.
+                    Modifiers
                     can
                     be used to manipulate blocks or elements or to style a specific item differently than the others.
                     <br>
 
-                    The syntax is as follows: 
-                
-                <pre>
+                    The syntax is as follows:
+
+                    <pre>
 
                     <code class="c-section__code">
 .block{};
@@ -421,7 +422,8 @@
             <section class="c-section" id="component-link">
                 <h3 class="c-section__heading">Links</h3>
                 <p class="c-section__text">
-                    Your can choose between different link styles but please keep consistency in using the chosen styling and don't 
+                    Your can choose between different link styles but please keep consistency in using the chosen
+                    styling and don't
                     switch between styles.
                 </p>
                 <h5 class="c-section__example">Example</h5>
@@ -475,7 +477,8 @@
                 <h3 class="c-section__heading">Buttons</h3>
                 <h4 class="c-section__subheading">Basic Buttons</h4>
                 <p class="c-section__text">
-                    Basic buttons are used for functionalities like "Submit", "Send" or "Cancel". If a button is inactive, its 
+                    Basic buttons are used for functionalities like "Submit", "Send" or "Cancel". If a button is
+                    inactive, its
                     opacity is set to 40% and the cursor it set to "default".
                 </p>
                 <h5 class="c-section__example">Example</h5>
@@ -511,6 +514,10 @@
             <section class="c-section" id="component-form">
                 <h3 class="c-section__heading">Form Elements</h3>
                 <h4 class="c-section__subheading">Drop Down Selection</h4>
+                <p class="c-section__text"> Make sure the drop down selection starts scrolling at 5 inputs.
+                    The color for the border should be the same as for the buttons you're using and the hover-state effect is
+                    always the inverted colors from the inactive state.
+                </p>
                 <h5 class="c-section__example">Example</h5>
 
                 <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="css,result"
@@ -527,16 +534,30 @@
             </section>
             <section class="c-section">
                 <h4 class="c-section__subheading">Search Input</h4>
+                <p class="c-section__text"> Search inputs should always have the same color for the 2px border as
+                    the button color you're using. The icon on the right is just an example,
+                    there you can use whatever fits you're website. </p>
                 <h5 class="c-section__example">Example</h5>
-                <!-- example search input -->
-                <!-- code snippet -->
-                <p class="c-section__text"> Notes </p>
+                <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="css,result"
+                    data-user="dottolodaniela" data-slug-hash="ZEYozdG"
+                    style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+                    data-pen-title="ZEYozdG">
+                    <span>See the Pen <a href="https://codepen.io/dottolodaniela/pen/ZEYozdG">
+                            ZEYozdG</a> by dottolodaniela (<a
+                            href="https://codepen.io/dottolodaniela">@dottolodaniela</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
             </section>
             <section class="c-section" id="component-nav">
                 <h3 class="c-section__heading">Navigation</h3>
                 <h5 class="c-section__example">Example</h5>
 
-                <p class="c-section__text">Navigation with only the logo:</p>
+                <p class="c-section__text">If you're using a navbar without any links, the Dataflix
+                    logo always has to be in the center of the bar.
+                    The bar can either be RED or DARKGREY.
+                </p>
 
                 <nav class="example2-navbar">
                     <svg class="example-svg" xmlns="http://www.w3.org/2000/svg"
@@ -565,7 +586,11 @@
                     </svg>
                 </nav>
 
-                <p class="c-section__text">Navigation with links:</p>
+                <p class="c-section__text">If you're using a navbar with links, the Dataflix logo has to be in the left
+                    corner of the bar
+                    , the links in the right. The bar can either be RED or DARKGREY.
+
+                </p>
 
                 <nav class="example-navbar">
                     <svg class="example-svg" xmlns="http://www.w3.org/2000/svg"
@@ -598,10 +623,7 @@
                         <li class="example-navbar__listitem"><a href=# class="navhover3">About us</a></li>
                     </ul>
                 </nav>
-
-                <p class="c-section__text"> Notes </p>
             </section>
-
         </article>
 
         <article class="l-container">
@@ -610,9 +632,9 @@
                 <h3 class="c-section__heading">Landing Page</h3>
                 <p class="c-section__text">
                     This page layout is for the landing page.
-                    The global header always stick to the top. Important information is placed in the middle 
+                    The global header always stick to the top. Important information is placed in the middle
                     of the page, semi-important information underneath.
-                    Claimers, explanations and all kinds of additional information for the user 
+                    Claimers, explanations and all kinds of additional information for the user
                     is positioned in the bottom left corner.
                 </p>
                 <img class="c-layout" src="./images/layout_landing.jpg" alt="Layout Template Landing Page">
@@ -620,10 +642,12 @@
             <section class="c-section" id="layout-2">
                 <h3 class="c-section__heading">Stats – Pie Chart</h3>
                 <p class="c-section__text">
-                    If you use a pie chart to display data, the chart is positioned in the middle of the page. 
+                    If you use a pie chart to display data, the chart is positioned in the middle of the page.
                     More information to the chart is on its left and right side. <br>
-                    In case of comparing more than two data groups, the space can be split. So in case of three the two main boxes 
-                    are split into half horizontally. The bottom right box stays empty. In case of four data groups all four boxes are 
+                    In case of comparing more than two data groups, the space can be split. So in case of three the two
+                    main boxes
+                    are split into half horizontally. The bottom right box stays empty. In case of four data groups all
+                    four boxes are
                     filled with data.
                 </p>
                 <img class="c-layout" src="./images/layout_stats.jpg" alt="Layout Template Piechart">
@@ -631,7 +655,7 @@
             <section class="c-section" id="layout-3">
                 <h3 class="c-section__heading">Stats – Bar Chart</h3>
                 <p class="c-section__text">
-                    The third sample layout is for displaying data in a bar chart. The chart takes up most of the 
+                    The third sample layout is for displaying data in a bar chart. The chart takes up most of the
                     page. Options for toggling the view of the bar chart are placed right above the chart.
                 </p>
                 <img class="c-layout" src="./images/layout_barchart.jpg" alt="Layout Template Barchart">
